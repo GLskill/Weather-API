@@ -2,11 +2,9 @@ from sqlalchemy import create_engine, Column, Integer, Float, String, DateTime
 from sqlalchemy.orm import sessionmaker, declarative_base
 from config import Config
 
-# Создаем базовый класс для моделей
-Base = declarative_base()
+Base = declarative_base()  # Используем новую версию функции
 
 
-# Создание таблицы для сохранения данных
 class WeatherRecord(Base):
     __tablename__ = 'weather_records'
 

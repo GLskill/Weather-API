@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float, DateTime
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base  # Обновлено с правильного пути
 
-Base = declarative_base()
+Base = declarative_base()  # Используем новую версию функции
 
 
 class WeatherRecord(Base):
